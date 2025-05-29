@@ -10,8 +10,15 @@ import { stripe } from "../lib/stripe";
 import Stripe from "stripe";
 import Link from "next/link";
 
-
-export default function Home({ products }) {
+interface HomeProps {
+  products: {
+    id: string;
+    name: string;
+    imageUrl: string;
+    price: string;
+  }[]
+}
+export default function Home({ products }: HomeProps) {
 
   const [sliderRef] = useKeenSlider({
     slides: {

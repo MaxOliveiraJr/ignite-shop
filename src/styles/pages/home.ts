@@ -15,6 +15,7 @@ export const Product = styled("div", {
   padding: "0.25rem",
   cursor: "pointer",
   position: "relative",
+  overflow: "hidden",
 
   display: "flex",
   alignItems: "center",
